@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+  h1{
+  background-color:   #ebebe0;
+  text-align: center;
+  color: #449c8f;
+  margin: 20px 550px 20px;
+  border-radius: 25px;
+}
+
+#snake {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
