@@ -11,6 +11,7 @@ let food = {
   x: Math.floor(Math.random() * 15 + 1) * box,
   y: Math.floor(Math.random() * 15 + 1) * box
 }
+let score = 0;
 
 function createBG() {
   context.fillStyle = "#ebebe0";
@@ -47,7 +48,7 @@ function startGame() {
   for (i = 1; i < snake.length; i++) {
     if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
       clearInterval(game);
-      alert("Game Over! :'(");
+      alert(`Game Over! Your score: ${score}`);
     }
   }
 
@@ -68,6 +69,7 @@ function startGame() {
   } else {
     food.x = Math.floor(Math.random() * 15 + 1) * box;
     food.y = Math.floor(Math.random() * 15 + 1) * box;
+    score += 1;
   }
 
   let newHead = {
